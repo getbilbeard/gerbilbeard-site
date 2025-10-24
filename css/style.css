@@ -97,6 +97,37 @@ p {
   position: relative;
 }
 
+.logo-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-logo {
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.6)) 
+          drop-shadow(0 0 40px rgba(255, 0, 128, 0.4));
+  animation: logoFloat 4s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.main-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.8)) 
+          drop-shadow(0 0 60px rgba(255, 0, 128, 0.6));
+}
+
+@keyframes logoFloat {
+  0%, 100% { 
+    transform: translateY(0px);
+  }
+  50% { 
+    transform: translateY(-10px);
+  }
+}
+
 .main-header::after {
   content: '';
   position: absolute;
@@ -328,5 +359,13 @@ body > h1 + p {
   
   h1 {
     font-size: 2rem;
+  }
+  
+  .main-logo {
+    width: 150px;
+  }
+  
+  .container {
+    padding: 1rem;
   }
 }
