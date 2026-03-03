@@ -11,22 +11,30 @@ function initializeGames() {
   // Game initialization code will go here
 }
 
-// Planet Tapper game functionality
+// Game action buttons on the video games page
 document.addEventListener('DOMContentLoaded', function() {
-  const playButton = document.querySelector('.play-button');
-  const learnMoreButton = document.querySelector('.learn-more-button');
-  
-  if (playButton) {
-    playButton.addEventListener('click', function() {
-      // For now, show an alert. Replace with actual game launch logic
-      alert('Planet Tapper will launch soon! Stay tuned for the full gaming experience.');
+  const actionButtons = document.querySelectorAll('button[data-game][data-action]');
+
+  actionButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      const game = button.dataset.game;
+      const action = button.dataset.action;
+
+      if (game === 'planet-tapper' && action === 'play') {
+        alert('Planet Tapper will launch soon! Stay tuned for the full gaming experience.');
+      }
+
+      if (game === 'planet-tapper' && action === 'learn-more') {
+        alert('More details about Planet Tapper coming soon! Follow our development journey.');
+      }
+
+      if (game === 'noise-timer' && action === 'play') {
+        alert('Noise Timer is still in development. Launch details are coming soon.');
+      }
+
+      if (game === 'noise-timer' && action === 'learn-more') {
+        alert('Classroom tips and setup guidance for Noise Timer are coming soon.');
+      }
     });
-  }
-  
-  if (learnMoreButton) {
-    learnMoreButton.addEventListener('click', function() {
-      // Scroll to show more details or redirect to game page
-      alert('More details about Planet Tapper coming soon! Follow our development journey.');
-    });
-  }
+  });
 });

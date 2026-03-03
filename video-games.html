@@ -19,6 +19,7 @@
     <nav class="main-nav">
       <ul>
         <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="classdash.html" class="nav-link">ClassDash</a></li>
         <li><a href="digital-shorts.html" class="nav-link">Digital Shorts</a></li>
         <li><a href="video-games.html" class="nav-link active">Video Games</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
@@ -33,6 +34,25 @@
         
         <div class="game-showcase">
           <div class="game-item">
+            <h3>ClassDash</h3>
+            <p class="game-status">Available on the App Store</p>
+            <div class="game-description">
+              <p>ClassDash now has its own product page with support and privacy links prepared for App Store Connect.</p>
+            </div>
+            <div class="game-features">
+              <ul>
+                <li>Dedicated app overview page</li>
+                <li>Support section for App Store review</li>
+                <li>Standalone privacy policy URL</li>
+                <li>Direct links you can submit in App Store Connect</li>
+              </ul>
+            </div>
+            <div class="game-actions">
+              <a href="classdash.html" class="play-button">Open Page</a>
+              <a href="classdash-privacy.html" class="learn-more-button">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="game-item">
             <h3>Planet Tapper</h3>
             <div class="game-description">
               <p>An engaging tapping game where you explore and terraform planets across the galaxy. Tap your way through different worlds and unlock cosmic adventures!</p>
@@ -46,8 +66,8 @@
               </ul>
             </div>
             <div class="game-actions">
-              <button class="play-button">Play Now</button>
-              <button class="learn-more-button">Learn More</button>
+              <button class="play-button" data-game="planet-tapper" data-action="play">Play Now</button>
+              <button class="learn-more-button" data-game="planet-tapper" data-action="learn-more">Learn More</button>
             </div>
           </div>
           <div class="game-item">
@@ -65,8 +85,8 @@
               </ul>
             </div>
             <div class="game-actions">
-              <button class="play-button">Launch Timer</button>
-              <button class="learn-more-button">Classroom Tips</button>
+              <button class="play-button" data-game="noise-timer" data-action="play">Launch Timer</button>
+              <button class="learn-more-button" data-game="noise-timer" data-action="learn-more">Classroom Tips</button>
             </div>
           </div>
         </div>
