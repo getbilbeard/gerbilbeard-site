@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support - GerbilBeard Games</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <div class="logo-container">
+        <img src="images/gerbilbeard-logo.png" alt="GerbilBeard Games Logo" class="main-logo">
+      </div>
+      <h1>Support</h1>
+      <p>Need help? Send us an email and we’ll get back to you.</p>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="classdash.html" class="nav-link">ClassDash</a></li>
+        <li><a href="classroom-noise-level.html" class="nav-link">Classroom Noise Level</a></li>
+        <li><a href="digital-shorts.html" class="nav-link">Digital Shorts</a></li>
+        <li><a href="video-games.html" class="nav-link">Video Games</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="support.html" class="nav-link active">Support</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+      </ul>
+    </nav>
+
+    <main class="page-content">
+      <section class="support-section">
+        <h2>Get Help</h2>
+        <p>Use the form below to open your email app with your support request pre-filled.</p>
+
+        <form class="support-form" action="mailto:support@gerbilbeard.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email" placeholder="you@example.com" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="Subject" placeholder="How can we help?" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="6" placeholder="Tell us what you need help with." required></textarea>
+
+          <button type="submit" class="play-button">Send Email</button>
+        </form>
+
+        <p class="support-email-note">Prefer direct email? Contact us at <a href="mailto:support@gerbilbeard.com">support@gerbilbeard.com</a>.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
